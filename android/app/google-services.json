@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "746913763656",
+    "project_id": "tic-tac-toe-cfa64",
+    "storage_bucket": "tic-tac-toe-cfa64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746913763656:android:1554b86ebf9c0ddb15a37d",
+        "android_client_info": {
+          "package_name": "me.haardikbhagtani.haardik_tic_tac_toe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746913763656-31r2mrirjobq2pi25uhqtm47cnubgl68.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.haardikbhagtani.haardik_tic_tac_toe",
+            "certificate_hash": "81c7bcc1a6ff82abd608a60985c64d82867db99d"
+          }
+        },
+        {
+          "client_id": "746913763656-k9be5t83pr1r8br2haqs2542pq02p1sr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc2C5ty2asSy9NvlpsQUEJ7RD_w9SnFpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746913763656-k9be5t83pr1r8br2haqs2542pq02p1sr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
