@@ -29,13 +29,17 @@ class _HomePageState extends State<HomePage> {
       }
       await _gameLevelRepository?.levelsCreatedAndInitialized();
     }
-    level = await _gameLevelRepository?.getLevel();
+    var level1 = await _gameLevelRepository?.getLevel();
+    setState(() {
+      level = level1;
+    });
     if (kDebugMode) {
       print(level);
     }
   }
 
   bool checkDone = false;
+  AuthModel _authModel = AuthModel();
 
   @override
   void initState() {
@@ -71,13 +75,16 @@ class _HomePageState extends State<HomePage> {
                     Icons.more_vert,
                     color: kMainColor,
                   ),
+                  onSelected: (selected) {
+                    _authModel.logOut();
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Splash()));
+                  },
                   itemBuilder: (_) => <PopupMenuItem<String>>[
                     PopupMenuItem<String>(
                       child: Text('Log Out'),
                       value: 'Log Out',
                       onTap: () {
-                        AuthModel().logOut();
-                        Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => Splash()));
+                        Navigator.pop(context, "Log Out");
                       },
                     ),
                   ],
@@ -340,6 +347,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           )
-        : CircularProgressIndicator();
+        : Center(
+            child: CircularProgressIndicator(
+              strokeWidth: 2,
+            ),
+          );
   }
 }
