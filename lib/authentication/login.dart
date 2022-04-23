@@ -49,14 +49,14 @@ class _LoginState extends State<Login> {
                     Text(
                       'Log in',
                       style: GoogleFonts.roboto(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                           color: kMainColor,
                           fontSize: 50,
                           fontWeight: FontWeight.w300,
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     TextFormField(
@@ -69,24 +69,24 @@ class _LoginState extends State<Login> {
                       keyboardType: TextInputType.emailAddress,
                       textInputAction: TextInputAction.next,
                       style: GoogleFonts.roboto(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                           color: kMainColor,
                           fontSize: 18,
                         ),
                       ),
                       decoration: InputDecoration(
-                        errorStyle: TextStyle(
+                        errorStyle: const TextStyle(
                           color: Colors.black,
                         ),
                         labelText: 'Email',
                         labelStyle: GoogleFonts.roboto(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                             color: kMainColor,
                             fontSize: 18,
                           ),
                         ),
                         floatingLabelStyle: GoogleFonts.roboto(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                             color: kMainColor,
                             fontSize: 22,
                           ),
@@ -99,13 +99,13 @@ class _LoginState extends State<Login> {
                         disabledBorder: kInputBorder,
                         focusedBorder: kInputBorder,
                         enabledBorder: kInputBorder,
-                        errorBorder: OutlineInputBorder(
+                        errorBorder: const OutlineInputBorder(
                           borderSide: BorderSide(
                             width: 2,
                             color: Colors.black,
                           ),
                         ),
-                        focusedErrorBorder: OutlineInputBorder(
+                        focusedErrorBorder: const OutlineInputBorder(
                           borderSide: BorderSide(
                             width: 2,
                             color: Colors.black,
@@ -113,7 +113,7 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     TextFormField(
@@ -126,21 +126,21 @@ class _LoginState extends State<Login> {
                       keyboardType: TextInputType.visiblePassword,
                       obscureText: true,
                       style: GoogleFonts.roboto(
-                        textStyle: TextStyle(color: kMainColor, fontSize: 18),
+                        textStyle: const TextStyle(color: kMainColor, fontSize: 18),
                       ),
                       decoration: InputDecoration(
-                        errorStyle: TextStyle(
+                        errorStyle: const TextStyle(
                           color: Colors.black,
                         ),
                         labelText: 'Password',
                         labelStyle: GoogleFonts.roboto(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                             color: kMainColor,
                             fontSize: 18,
                           ),
                         ),
                         floatingLabelStyle: GoogleFonts.roboto(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                             color: kMainColor,
                             fontSize: 22,
                           ),
@@ -153,13 +153,13 @@ class _LoginState extends State<Login> {
                         disabledBorder: kInputBorder,
                         focusedBorder: kInputBorder,
                         enabledBorder: kInputBorder,
-                        errorBorder: OutlineInputBorder(
+                        errorBorder: const OutlineInputBorder(
                           borderSide: BorderSide(
                             width: 2,
                             color: Colors.black,
                           ),
                         ),
-                        focusedErrorBorder: OutlineInputBorder(
+                        focusedErrorBorder: const OutlineInputBorder(
                           borderSide: BorderSide(
                             width: 2,
                             color: Colors.black,
@@ -167,7 +167,7 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     SizedBox(
@@ -214,7 +214,7 @@ class _LoginState extends State<Login> {
                         child: Text(
                           'LOG IN',
                           style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               color: Colors.white,
                               fontSize: 14,
                               fontWeight: FontWeight.bold,

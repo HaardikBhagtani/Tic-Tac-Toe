@@ -6,5 +6,5 @@ const OutlineInputBorder kInputBorder = OutlineInputBorder(
     width: 2,
     color: kMainColor,
   ),
-  borderRadius: const BorderRadius.all(Radius.zero),
+  borderRadius: BorderRadius.all(Radius.zero),
 );

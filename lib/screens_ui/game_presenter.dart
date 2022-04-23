@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:flutter/foundation.dart';
 import 'package:haardik_tic_tac_toe/ai/ai.dart';
 import 'package:haardik_tic_tac_toe/ai/utils.dart';
 import 'package:haardik_tic_tac_toe/storage/levels_repo.dart';
@@ -51,7 +52,9 @@ class GamePresenter {
       /// LEVEL- DIFFICULT
       aiMove = await Future(() => _aiPlayer.play(board, Ai.aiPlayer));
       Timer(Duration(seconds: 3), () {
-        print(" This line is execute after 3 seconds");
+        if (kDebugMode) {
+          print(" This line is execute after 3 seconds");
+        }
         // do the next move
         board[aiMove] = Ai.aiPlayer;
         // evaluate the board after the AI player move

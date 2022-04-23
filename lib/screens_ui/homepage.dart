@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
               title: Text(
                 'Tic Tac Toe',
                 style: GoogleFonts.roboto(
-                  textStyle: TextStyle(
+                  textStyle: const TextStyle(
                     color: kMainColor,
                   ),
                 ),
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
               centerTitle: true,
               actions: [
                 PopupMenuButton(
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.more_vert,
                     color: kMainColor,
                   ),
@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
                   },
                   itemBuilder: (_) => <PopupMenuItem<String>>[
                     PopupMenuItem<String>(
-                      child: Text('Log Out'),
+                      child: const Text('Log Out'),
                       value: 'Log Out',
                       onTap: () {
                         Navigator.pop(context, "Log Out");
@@ -104,7 +104,7 @@ class _HomePageState extends State<HomePage> {
                           Text(
                             'MODE',
                             style: GoogleFonts.roboto(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                 color: kMainColor,
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                             child: ElevatedButton(
                               style: ButtonStyle(
                                 shape: MaterialStateProperty.all<OutlinedBorder>(
-                                  RoundedRectangleBorder(
+                                  const RoundedRectangleBorder(
                                     side: BorderSide(color: kMainColor, width: 2),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(5),
@@ -129,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.person_outline,
                                     size: 28,
                                     color: Color(0xFFFFDB1E),
@@ -137,14 +137,14 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     "VS",
                                     style: GoogleFonts.roboto(
-                                      textStyle: TextStyle(
+                                      textStyle: const TextStyle(
                                         color: Color(0xFFFFDB1E),
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.monitor,
                                     size: 28,
                                     color: Color(0xFFFFDB1E),
@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15,
                           ),
                           Container(
@@ -161,7 +161,7 @@ class _HomePageState extends State<HomePage> {
                             child: ElevatedButton(
                               style: ButtonStyle(
                                 shape: MaterialStateProperty.all<OutlinedBorder>(
-                                  RoundedRectangleBorder(
+                                  const RoundedRectangleBorder(
                                     side: BorderSide(color: kMainColor, width: 2),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(5),
@@ -184,7 +184,7 @@ class _HomePageState extends State<HomePage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.person_outline,
                                     size: 28,
                                     color: kMainColor,
@@ -192,14 +192,14 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     "VS",
                                     style: GoogleFonts.roboto(
-                                      textStyle: TextStyle(
+                                      textStyle: const TextStyle(
                                         color: kMainColor,
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ),
-                                  Icon(
+                                  const Icon(
                                     Icons.person_outline,
                                     size: 28,
                                     color: kMainColor,
@@ -215,7 +215,7 @@ class _HomePageState extends State<HomePage> {
                           Text(
                             'LEVEL',
                             style: GoogleFonts.roboto(
-                              textStyle: TextStyle(
+                              textStyle: const TextStyle(
                                 color: kMainColor,
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
@@ -227,7 +227,7 @@ class _HomePageState extends State<HomePage> {
                             child: ElevatedButton(
                               style: ButtonStyle(
                                 shape: MaterialStateProperty.all<OutlinedBorder>(
-                                  RoundedRectangleBorder(
+                                  const RoundedRectangleBorder(
                                     side: BorderSide(color: kMainColor, width: 2),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(5),
@@ -261,7 +261,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15,
                           ),
                           Container(
@@ -269,7 +269,7 @@ class _HomePageState extends State<HomePage> {
                             child: ElevatedButton(
                               style: ButtonStyle(
                                 shape: MaterialStateProperty.all<OutlinedBorder>(
-                                  RoundedRectangleBorder(
+                                  const RoundedRectangleBorder(
                                     side: BorderSide(color: kMainColor, width: 2),
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(5),
@@ -334,7 +334,7 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         "PLAY",
                         style: GoogleFonts.roboto(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                             color: kMainColor,
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
@@ -347,7 +347,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           )
-        : Center(
+        : const Center(
             child: CircularProgressIndicator(
               strokeWidth: 2,
             ),
